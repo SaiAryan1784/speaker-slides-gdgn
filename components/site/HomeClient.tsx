@@ -107,9 +107,9 @@ export function HomeClient({ events, docs }: { events: EventCardData[]; docs: Se
                 type="search"
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
-                placeholder="Search a speaker, topic or event"
+                placeholder="Search speakers or topics"
                 autoComplete="off"
-                className="h-14 w-full rounded-full border border-line-strong bg-surface pl-12 pr-24 text-base shadow-[0_1px_2px_rgba(20,24,31,0.04)] outline-none transition-[border-color,box-shadow] placeholder:text-muted focus:border-g-blue focus:shadow-[0_0_0_4px_var(--color-g-blue-tint)]"
+                className="h-14 w-full rounded-full border border-line-strong bg-surface pl-12 pr-14 text-base [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-cancel-button]:appearance-none shadow-[0_1px_2px_rgba(20,24,31,0.04)] outline-none transition-[border-color,box-shadow] placeholder:text-muted focus:border-g-blue focus:shadow-[0_0_0_4px_var(--color-g-blue-tint)]"
               />
               {q ? (
                 <button

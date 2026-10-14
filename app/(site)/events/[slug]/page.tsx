@@ -36,7 +36,7 @@ export default async function EventPage({ params }: Props) {
         <ArrowLeftIcon size={16} aria-hidden /> All events
       </Link>
 
-      <header className="mt-4 grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-end">
+      <header className="mt-4 grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
         <div>
           <span className={`inline-block rounded-full px-3 py-1 text-xs font-medium ${style.chip}`}>{style.label}</span>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tighter text-balance sm:text-5xl">{event.name}</h1>
